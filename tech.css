@@ -8,89 +8,92 @@
     background-color: #444;
     color: #ccc;
 }
-.menu{
-    float: left;
+iframe{
+    margin: 20px;
+    display: flex;
+    justify-items: center;
+    animation: iframe 10s infinite ease;
+    
 }
 a{
     text-decoration: none;
 }
-.con{
-   
-}
-.pic{
-    width: 230px;
-    height: 230px;
-    
-}
-body{
-  
- border: 2px solid darkcyan;
-height: 70vh;
-    display: grid;
-    grid-template-columns: (8,1fr);
-    grid-template-rows: 100px 100px 100px;
-    grid-template-areas: "header header header header header header"
-    "sa sa sa ax ax  ax"
-    "zx zx zx zx zx zx zx zx"
-    "footer footer footer footer footer footer";
-
-}
-ul{
-    margin:-10px 20px 0px 0px;
-}
-
-
 .record{
+    float: right;
+    position: relative;
+    right: -350px;
+    top: 20px;
+    list-style-type: none;
+    border: solid 3px rgb(130, 130, 233);
+    transition:border-color 0.5s ease;
+    background-color: thistle;
+    padding: 10px;
+cursor: grab;
+display: flex;
 
-    float:left;
-    background-color: rgb(147, 39, 220);
-text-align: center;
-border: solid 2px rgb(0, 255, 187);
-width: 95px;
-padding: 5px;
-border-radius: 5px;
-margin: 70px 100px;
-}
-.name{
-    justify-content: center;
-    font-size: 30px;
-grid-area: name;
-}
-header{
-    background-color: rgba(59, 195, 186,0.4);
-  grid-area: span header;
-
-}
-.logo{
-    width: 65px;
-    height: 70px;
-    margin: -20px 0px 0px 3px;
-    border-radius: 20%;
 }
 .inlist{
-    min-width: 100px;
-    min-height: 40px;
-    max-height: 40px;
-    max-width: 80px;
-   align-content: center;
-    list-style: none;
-    margin: 0px 1px 0px  15px;
-   padding: 2px;
-    color: rgb(0, 85, 255);
-white-space: 15px;
- text-align: center;
+    float: right;
+display: inline-block;
+position: relative;
+align-content: end;
+top:70px;
+   width:75px;
+   height: 40px;
+   text-align: center;
+margin: 0px 2px 0px 0px;
 
- font-size: 22px;
+
+}
+h4{
+   position: relative;
+width :400px;
+font-size: 30px;
+padding:  10px 20px;
 }
 .inlist:hover{
-    cursor: grab;
-    background-color: rgb(245, 136, 149);
-    scale: 1.3;
-font-weight: 400
+scale: 1.2;
+background-color: cornflowerblue;
+border-radius: 10px;
+height: 20px;
+padding: 10px;
 }
+.inlist::after{
+    background-color: #f59595;
+}
+.pic{
+   
+    width: 300px;
+    height: 230px;
+    }
+body{
+ border: 2px solid darkcyan;
+height:max-content;
+
+
+}
+
+
+.name{
+    justify-content: center;
+ 
+}
+header{
+    position: relative;
+    background-color: rgba(59, 195, 186,0.4);
+top: -40px;
+height: 120px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 0px 0px 0px 3px;
+    border-radius: 20%;
+}
+
 footer{
     background-color: hwb(180 12% 13%);   
-    grid-area:span footer;
+
     text-align: center;
     min-height: 50px;
     max-height: 40PX;
@@ -104,8 +107,6 @@ overflow: inherit;
     src: url('RubikDistressed-Regular.ttf') format(truetype);
     
 }
-
-
 
   /* who_us */
   .container{
