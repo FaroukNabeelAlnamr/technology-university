@@ -3,34 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="record.css">
+    <link rel="stylesheet" href="../tech.css">
     <title>تسجيل طالب </title>
 </head>
 <body>
-<button class="back" ><a href="index.html">Back To Home</a></button>
+
         <h3>Record Student</h3>
         <form action="">
-<span>
-<label for="First_Name">First_Name</label>
- <input type="text" id="name" placeholder="Name" required aria-required="false"  aria-describedby="h]og"> 
+<fieldset>
+  <legend>Record Student</legend>
+  <link rel="stylesheet" href="style.css">
+<label for="Name">Name</label>
+ <input type="text" id="name" placeholder="Name" required  > 
+ <label for="Name">Name</label>
+ <input type="text" id="name" placeholder="Name" required  > 
 
+
+<label for="identity_number">identity_number</label>
+ <input type="number" placeholder="identity_number" required  > 
  
-          
-       
-          <button onclick="printData()" class="submit" type="submit" >Submit form</button>
+ <label for="phone_number">phone_number</label>
+ <input type="tel"  placeholder="phone_number" required  > 
+
+ <h4 for="avg_secondary">avg_secondary</h4>
+ <input type="number"  placeholder="avg_secondary" required  > 
+
+ <label for="place_birth">place_birth</label>
+ <input type="text"  placeholder="place_birth" required  > 
+
+ <label for="dae_birth">dae_birth</label>
+ <input type="date" placeholder="dae_birth" required  > 
+
+ <label for="address">address</label>
+ <input type="text"  placeholder="address" required  > 
+ <br>
+              <label for="male"><input class="radio" type="radio" name="male" value="male" required>male</label>    
+ <label for="fmale"><input class="radio" type="radio" name="male" value="fmale" required>fmale</label>
+<br>
+          <button  class="submit" type="submit" >Submit form</button>
  
+</fieldset>
+
         </span>
       </form>
-
-      <div id="data"></div>
-      <script>
-        function printData(){
-        const name = document.getElementById("name").vlue;
-          document.getElementById("data");
-        
-        }
-        Savetostor
-      </script>
-
+<br>
+     
+<button class="back" ><a href="../index.html">Back To Home</a></button>
 </body>
+<footer>
+    <p>&copy; 2025 Technology Universty</p>
+</footer>
 </html>

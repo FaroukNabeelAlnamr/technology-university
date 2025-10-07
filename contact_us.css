@@ -1,15 +1,14 @@
 body{
     background-color: rgb(193, 248, 238);
-    border: 5px solid black;
-    height:max-content;
+    border: 3px solid black;
+  height: 120vh;
     width: 98%;
+    display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
 
-}
-.cover{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto auto auto;
-}
 .menu{
     float: right;
 }
@@ -19,27 +18,31 @@ a{
 }
 
 .container{
-    background-color: beige;
-   justify-content: center;
-   justify-self: center;
-margin-top: 15vh;
-    align-content: center;
-height:60vh;
-width: 50%;
-grid-template-areas: 20px 20px 200px 20px;
-display: grid;
+    display: flex;
+    justify-content: center;
 }
 section{
     justify-content: center;
     
 }
+.back{
+    background-color: rgba(137, 43, 226, 0.626);
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    display:flex;
+
+}
 
 fieldset{
-    width: max-content;
-    height: max-content;
+   display: grid;
 }
 @media screen and (max-width:460px) {
      body{
         width: 98%;
      }
 } 
+input{
+
+}
+@import url();

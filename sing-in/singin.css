@@ -41,7 +41,7 @@ fieldset{
     background-color: brown;
 }
 input{
-    
+    content: "hi";
 
     width:300px;
     height: 30px;
